@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +9,15 @@
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
+
+    <br>
+    <form action="cars" method="get">
+        <input type="number" min="0" max="999" value="1" name="count"
+               placeholder="Count" required/>
+        <input type="submit" value="Show"/>
+    </form>
+    <br>
+    <a href="cars">Show all cars!</a>
 </div>
 </body>
 </html>

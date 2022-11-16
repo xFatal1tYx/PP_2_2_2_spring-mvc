@@ -48,7 +48,7 @@
                     <configuration>
                         <warSourceDirectory>src/webapp</warSourceDirectory>
                         <warName>spring_mvc</warName>
-                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                        <failOnMissingWebXml>true</failOnMissingWebXml>
                     </configuration>
                 </plugin>
             </plugins>
